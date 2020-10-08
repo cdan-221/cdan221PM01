@@ -70,7 +70,7 @@ public class DialogueScene1 : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "FRIEND";
-            Char2speech.text = "Well, I mean, there's an opening at my place.";
+            Char2speech.text = "Well, I mean, there's an opening at my place. You could always apply there.";
             //gameHandler.AddPlayerStat(1);
         }
         else if (primeInt == 4)
