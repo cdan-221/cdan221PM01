@@ -34,7 +34,6 @@ public class DialogueScene1 : MonoBehaviour
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         NextScene1Button.SetActive(false);
-        NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
     }
 
