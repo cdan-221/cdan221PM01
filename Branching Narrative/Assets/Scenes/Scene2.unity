@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 124535012}
   - component: {fileID: 124535011}
   m_Layer: 5
-  m_Name: ButtonChoice2b
+  m_Name: ButtonChoice1b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 255094534}
   - component: {fileID: 255094533}
   m_Layer: 5
-  m_Name: ImageBG2
+  m_Name: ImageBG1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -307,7 +307,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a2e7fbab3de5aea4a917bff6e0e2b82d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec57c2d97a14b6941913813f857b2697, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -338,7 +338,7 @@ GameObject:
   - component: {fileID: 275431797}
   - component: {fileID: 275431796}
   m_Layer: 5
-  m_Name: ButtonChoice2a
+  m_Name: ButtonChoice1a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1285,6 +1285,7 @@ GameObject:
   - component: {fileID: 1394961374}
   - component: {fileID: 1394961373}
   - component: {fileID: 1394961372}
+  - component: {fileID: 1394961376}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1378,6 +1379,33 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1394961376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394961371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ea2c02d11f0ecf4a84177b90d556028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  primeInt: 1
+  Char1name: {fileID: 1519492534}
+  Char1speech: {fileID: 887722989}
+  Char2name: {fileID: 631394152}
+  Char2speech: {fileID: 1511157343}
+  Char3name: {fileID: 0}
+  Char3speech: {fileID: 0}
+  dialogue: {fileID: 418755525}
+  ArtChar1: {fileID: 2118820597}
+  ArtBG1: {fileID: 255094531}
+  Choice1a: {fileID: 275431794}
+  Choice1b: {fileID: 124535009}
+  NextScene1Button: {fileID: 1441546984}
+  NextScene2Button: {fileID: 0}
+  nextButton: {fileID: 804375344}
 --- !u!1 &1441546984
 GameObject:
   m_ObjectHideFlags: 0
@@ -1391,7 +1419,7 @@ GameObject:
   - component: {fileID: 1441546987}
   - component: {fileID: 1441546986}
   m_Layer: 5
-  m_Name: ButtonScene3
+  m_Name: ButtonScene2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1833,7 +1861,7 @@ GameObject:
   - component: {fileID: 2118820600}
   - component: {fileID: 2118820599}
   m_Layer: 5
-  m_Name: ImageCHAR2
+  m_Name: ImageCHAR1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1856,7 +1884,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1280, y: 700}
+  m_SizeDelta: {x: 1280, y: 720}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2118820599
 MonoBehaviour:
@@ -1871,13 +1899,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b74dabcf308b29247bc498884164b648, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cd7fc3a310c4c924081c43a1e480ba86, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
