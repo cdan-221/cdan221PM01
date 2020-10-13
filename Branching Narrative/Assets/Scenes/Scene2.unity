@@ -670,7 +670,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: put choice 2 text here
+  m_Text: I'll check that
 --- !u!222 &591296578
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1186,7 +1186,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: put choice 2 text here
+  m_Text: I'm good
 --- !u!222 &1082751937
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1468,7 +1468,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Go to scene 3
+  m_Text: NEXT
 --- !u!222 &1295951661
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2040,7 +2040,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Go to scene 3
+  m_Text: NEXT
 --- !u!222 &1851482835
 CanvasRenderer:
   m_ObjectHideFlags: 0
