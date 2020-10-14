@@ -19,8 +19,10 @@ public class DialogueScene6 : MonoBehaviour
     public GameObject ArtBG1;
     public GameObject Choice1a;
     public GameObject Choice1b;
+    public GameObject Choice1c;
     public GameObject NextScene1Button;
     public GameObject NextScene2Button;
+    public GameObject NextScene3Button;
     public GameObject nextButton;
     //public GameObject gameHandler;
     //public AudioSource audioSource;
@@ -33,8 +35,10 @@ public class DialogueScene6 : MonoBehaviour
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
+        Choice1c.SetActive(false);
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
+        NextScene3Button.SetActive(false);
         nextButton.SetActive(true);
     }
 
@@ -60,8 +64,8 @@ public class DialogueScene6 : MonoBehaviour
         {
             ArtChar1.SetActive(true);
             dialogue.SetActive(true);
-            Char1name.text = "Jeda";
-            Char1speech.text = "Wakey wakey, human.";
+            Char1name.text = "You";
+            Char1speech.text = "Hello, how can I help you?";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -69,14 +73,14 @@ public class DialogueScene6 : MonoBehaviour
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "You";
-            Char2speech.text = "Wuh..? What happended?";
+            Char2name.text = "Customer";
+            Char2speech.text = "Hi, can I get a number 4 meal and a kid's chicken nugget meal?";
             //gameHandler.AddPlayerStat(1);
         }
         else if (primeInt == 4)
         {
-            Char1name.text = "Jeda";
-            Char1speech.text = "I know I did not hit you that hard.";
+            Char1name.text = "You";
+            Char1speech.text = "Of course. That will be $14.50.";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -84,50 +88,45 @@ public class DialogueScene6 : MonoBehaviour
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "You";
-            Char2speech.text = "Hit me? Why?";
+            Char2name.text = "Customer";
+            Char2speech.text = "Also, have you seen my son anywhere?";
             //gameHandler.AddPlayerStat(1);
         }
         else if (primeInt == 6)
         {
-            Char1name.text = "Jeda";
-            Char1speech.text = "I am searching for a fugitive. Ragu Fahn.";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Customer";
+            Char2speech.text = "I leave him alone for a second to use the washroom and now he's gone off somewhere!";
         }
         else if (primeInt == 7)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "You";
-            Char2speech.text = "Why do you think I know anything?";
+            Char1name.text = "You";
+            Char1speech.text = "I haven't, but I can help you find him if you'd like.";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
         else if (primeInt == 8)
         {
-            Char1name.text = "Jeda";
-            Char1speech.text = "Do not play the stupid. You will take me to him.";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Customer";
+            Char2speech.text = "Oh thank you so much! I swear, I cant keep him in one place for long.";
             // Turn off "Next" button, turn on "Choice" buttons
             nextButton.SetActive(false);
             allowSpace = false;
             Choice1a.SetActive(true); // function Choice1aFunct()
             Choice1b.SetActive(true); // function Choice1bFunct()
+            Choice1c.SetActive(true);
         }
         // ENCOUNTER AFTER CHOICE #1
+
         else if (primeInt == 100)
         {
-            Char1name.text = "Jeda";
-            Char1speech.text = "Then you are no use to me, and must be silenced.";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 101)
-        {
-            Char1name.text = "Jeda";
-            Char1speech.text = "Come back here! Do not think you can hide from me!";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Customer";
+            Char2speech.text = "Ok, thank you.";
             nextButton.SetActive(false);
             allowSpace = false;
             NextScene1Button.SetActive(true);
@@ -135,59 +134,78 @@ public class DialogueScene6 : MonoBehaviour
 
         else if (primeInt == 200)
         {
-            Char1name.text = "Jeda";
-            Char1speech.text = "Do not think you can fool me, human. Where will we find him?";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 201)
-        {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "You";
-            Char2speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
+            Char2name.text = "Customer";
+            Char2speech.text = "Ok, thank you.";
             nextButton.SetActive(false);
             allowSpace = false;
             NextScene2Button.SetActive(true);
+        }
+
+        else if (primeInt == 300)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Customer";
+            Char2speech.text = "Ok, thank you.";
+            nextButton.SetActive(false);
+            allowSpace = false;
+            NextScene3Button.SetActive(true);
         }
     }
 
     // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
     public void Choice1aFunct()
     {
-        Char1name.text = "";
-        Char1speech.text = "";
-        Char2name.text = "You";
-        Char2speech.text = "I don't know what you're talking about!";
+        Char1name.text = "You";
+        Char1speech.text = "I'll go ask my coworker if they've seen him.";
+        Char2name.text = "";
+        Char2speech.text = "";
         primeInt = 99;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
+        Choice1c.SetActive(false);
         nextButton.SetActive(true);
         allowSpace = true;
     }
     public void Choice1bFunct()
     {
-        Char1name.text = "";
-        Char1speech.text = "";
-        Char2name.text = "You";
-        Char2speech.text = "Sure, anything you want... just lay off the club.";
+        Char1name.text = "You";
+        Char1speech.text = "I'll go check the playground area.";
+        Char2name.text = "";
+        Char2speech.text = "";
         primeInt = 199;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
+        Choice1c.SetActive(false);
+        nextButton.SetActive(true);
+        allowSpace = true;
+    }
+    public void Choice1cFunct()
+    {
+        Char1name.text = "You";
+        Char1speech.text = "I'll check the back room for him.";
+        Char2name.text = "";
+        Char2speech.text = "";
+        primeInt = 199;
+        Choice1a.SetActive(false);
+        Choice1b.SetActive(false);
+        Choice1c.SetActive(false);
         nextButton.SetActive(true);
         allowSpace = true;
     }
 
-    public void SceneChange2a()
+    public void SceneChange7a()
     {
         SceneManager.LoadScene("Scene7a");
     }
-    public void SceneChange2b()
+    public void SceneChange7b()
     {
         SceneManager.LoadScene("Scene7b");
     }
 
-    public void SceneChange2c()
+    public void SceneChange7c()
     {
         SceneManager.LoadScene("Scene7c");
     }
