@@ -60,8 +60,8 @@ public class DialogueScene4b : MonoBehaviour
         {
             ArtChar1.SetActive(true);
             dialogue.SetActive(true);
-            Char1name.text = "Jeda";
-            Char1speech.text = "Wakey wakey, human.";
+            Char1name.text = "Monster";
+            Char1speech.text = "Waah! Waaaaah!!.";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -70,13 +70,13 @@ public class DialogueScene4b : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "You";
-            Char2speech.text = "Wuh..? What happended?";
+            Char2speech.text = "Please don't...";
             //gameHandler.AddPlayerStat(1);
         }
         else if (primeInt == 4)
         {
-            Char1name.text = "Jeda";
-            Char1speech.text = "I know I did not hit you that hard.";
+            Char1name.text = "Monster";
+            Char1speech.text = "WAAAAAAAAAAH!!!!";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -85,47 +85,39 @@ public class DialogueScene4b : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "You";
-            Char2speech.text = "Hit me? Why?";
+            Char2speech.text = "OMG... What should I do?";
             //gameHandler.AddPlayerStat(1);
-        }
-        else if (primeInt == 6)
-        {
-            Char1name.text = "Jeda";
-            Char1speech.text = "I am searching for a fugitive. Ragu Fahn.";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 7)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "You";
-            Char2speech.text = "Why do you think I know anything?";
-        }
-        else if (primeInt == 8)
-        {
-            Char1name.text = "Jeda";
-            Char1speech.text = "Do not play the stupid. You will take me to him.";
-            Char2name.text = "";
-            Char2speech.text = "";
             // Turn off "Next" button, turn on "Choice" buttons
+            ArtChar1.SetActive(false);
             nextButton.SetActive(false);
             allowSpace = false;
             Choice1a.SetActive(true); // function Choice1aFunct()
             Choice1b.SetActive(true); // function Choice1bFunct()
         }
+
+
         // ENCOUNTER AFTER CHOICE #1
         else if (primeInt == 100)
         {
-            Char1name.text = "Jeda";
-            Char1speech.text = "Then you are no use to me, and must be silenced.";
+            Char1name.text = "Monster";
+            Char1speech.text = "Really?";
             Char2name.text = "";
             Char2speech.text = "";
+            ArtChar1.SetActive(true);
         }
+
         else if (primeInt == 101)
         {
-            Char1name.text = "Jeda";
-            Char1speech.text = "Come back here! Do not think you can hide from me!";
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "You";
+            Char2speech.text = "Yeah, Please come in.";
+        }
+
+        else if (primeInt == 102)
+        {
+            Char1name.text = "Monster";
+            Char1speech.text = "Okay, Thank you XD";
             Char2name.text = "";
             Char2speech.text = "";
             nextButton.SetActive(false);
@@ -133,24 +125,28 @@ public class DialogueScene4b : MonoBehaviour
             NextScene1Button.SetActive(true);
         }
 
+
+
         else if (primeInt == 200)
         {
-            Char1name.text = "Jeda";
-            Char1speech.text = "Do not think you can fool me, human. Where will we find him?";
+            Char1name.text = "Mosnter";
+            Char1speech.text = "WAAAAAAAH!!!!! You are so mean";
             Char2name.text = "";
             Char2speech.text = "";
+            ArtChar1.SetActive(true);
         }
+
         else if (primeInt == 201)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "You";
-            Char2speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
+            Char1name.text = "Mosnter";
+            Char1speech.text = "Buddies! Come here!";
+            Char2name.text = "";
+            Char2speech.text = "";
             nextButton.SetActive(false);
             allowSpace = false;
             NextScene2Button.SetActive(true);
         }
-    }
+        }
 
     // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
     public void Choice1aFunct()
@@ -158,7 +154,7 @@ public class DialogueScene4b : MonoBehaviour
         Char1name.text = "";
         Char1speech.text = "";
         Char2name.text = "You";
-        Char2speech.text = "I don't know what you're talking about!";
+        Char2speech.text = "Okay, my friend. I will take your order. Please stop crying.";
         primeInt = 99;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -170,7 +166,7 @@ public class DialogueScene4b : MonoBehaviour
         Char1name.text = "";
         Char1speech.text = "";
         Char2name.text = "You";
-        Char2speech.text = "Sure, anything you want... just lay off the club.";
+        Char2speech.text = "Go away!";
         primeInt = 199;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -180,10 +176,10 @@ public class DialogueScene4b : MonoBehaviour
 
     public void SceneChange2a()
     {
-        SceneManager.LoadScene("Scene2a");
+        SceneManager.LoadScene("Scene4a");
     }
     public void SceneChange2b()
     {
-        SceneManager.LoadScene("Scene2b");
+        SceneManager.LoadScene("End_Lose2");
     }
 }
