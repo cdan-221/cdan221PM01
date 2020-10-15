@@ -1084,13 +1084,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   primeInt: 1
-  Char1name: {fileID: 0}
-  Char1speech: {fileID: 0}
-  Char2name: {fileID: 0}
-  Char2speech: {fileID: 0}
+  Char1name: {fileID: 1449327028}
+  Char1speech: {fileID: 616173445}
+  Char2name: {fileID: 1374316515}
+  Char2speech: {fileID: 662258637}
   Char3name: {fileID: 0}
   Char3speech: {fileID: 0}
-  dialogue: {fileID: 0}
+  dialogue: {fileID: 902932504}
   ArtChar1: {fileID: 1011790849}
   ArtBG1: {fileID: 2008392796}
   Choice1a: {fileID: 1694388400}
@@ -1827,7 +1827,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 52bca6eb3eeb3b5499a6e42477390891, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fe6764c74c1eb534ea02b0eadbc818ce, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
