@@ -18,7 +18,6 @@ public class DialogueScene3b : MonoBehaviour
     public GameObject ArtChar1;
     public GameObject ArtBG1;
     public GameObject NextScene1Button;
-    public GameObject NextScene2Button;
     public GameObject nextButton;
     //public GameObject gameHandler;
     //public AudioSource audioSource;
@@ -30,7 +29,6 @@ public class DialogueScene3b : MonoBehaviour
         ArtChar1.SetActive(false);
         ArtBG1.SetActive(true);
         NextScene1Button.SetActive(false);
-        NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
     }
 
@@ -100,9 +98,9 @@ public class DialogueScene3b : MonoBehaviour
         }
         else if (primeInt == 8)
         {
-            Char1name.text = "Muffled yelling";
+            Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "";
+            Char2name.text = "Muffled yelling";
             Char2speech.text = "C'mon, let us in already! We've been waiting forever!";
             // Turn off "Next" button, turn on "Choice" buttons
 
