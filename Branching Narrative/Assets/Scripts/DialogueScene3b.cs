@@ -100,8 +100,8 @@ public class DialogueScene3b : MonoBehaviour
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "Muffled yelling";
-            Char2speech.text = "C'mon, let us in already! We've been waiting forever!";
+            Char2name.text = "Muffled crying";
+            Char2speech.text = "C'mon, let us in already! I just want some food! Waaaaah!";
             // Turn off "Next" button, turn on "Choice" buttons
 
 
