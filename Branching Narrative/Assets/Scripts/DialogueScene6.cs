@@ -188,7 +188,7 @@ public class DialogueScene6 : MonoBehaviour
         Char1speech.text = "I'll check the back room for him.";
         Char2name.text = "";
         Char2speech.text = "";
-        primeInt = 199;
+        primeInt = 299;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         Choice1c.SetActive(false);

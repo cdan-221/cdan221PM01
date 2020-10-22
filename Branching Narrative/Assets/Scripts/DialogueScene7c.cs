@@ -140,7 +140,7 @@ public class DialogueScene7c : MonoBehaviour
         else if (primeInt == 200)
         {
             Char1name.text = "Monster";
-            Char1speech.text = "We're arugueing why I looks so handsome.";
+            Char1speech.text = "We're aruguing why I looks so handsome.";
             Char2name.text = "";
             Char2speech.text = "";
             ArtChar1.SetActive(true);
@@ -155,7 +155,7 @@ public class DialogueScene7c : MonoBehaviour
         else if (primeInt == 202)
         {
             Char1name.text = "Monster";
-            Char1speech.text = "I also talk to Ralph. We grew up in the same town. He gave me a free ice cream...  hehehehe~";
+            Char1speech.text = "I also talked to Ralph. We grew up in the same town. He gave me a free ice cream...  hehehehe~";
             Char2name.text = "";
             Char2speech.text = "";
         }

@@ -1272,7 +1272,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Check Playground
+  m_Text: Check storage room
 --- !u!222 &720226872
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1714,7 +1714,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Check storage room
+  m_Text: Check playground
 --- !u!222 &1441469491
 CanvasRenderer:
   m_ObjectHideFlags: 0
